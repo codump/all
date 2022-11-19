@@ -1,0 +1,21 @@
+{ 
+	"scripts": [
+		{ "itemId": "1659377898000", "URLid":"save-and-display-posts-on-github-pages", "title":"Using JSON to save and display your posts on GitHub pages.", "postedOn":"27 June 2022", "author":"Kip", "lastEdit":"-", "tags": "Script", "content":"When using GitHub pages, you can't use a PHP back-end to handle and store your posts. Therefore I made this script that uses a JSON file to store the data of my posts. And then displays it on the Codump GitHub page you are looking at right now. Yes, this post is also stored in a JSON file and processed by JavaScript to display it to you." },
+    	{ "itemId": "1659205098000", "URLid":"user-edit-full-width-cover-image", "title":"User editable full width cover image with position input and preview.", "postedOn":"25 June 2022", "author":"Kip", "lastEdit":"-", "tags": "Script", "content":"Cover images are a common thing now a days. In this example I have made a full width version with a fixed height. But then the issue came up on how to vertically align the image. Every image needs another alignment then the other. So this I solved by adding a range input, so the end user can adjust it themselves easily."}
+	],
+	"discord": [
+		{
+			"itemId": "1668104462000",
+			"URLid": "discord.js-v14-basic-bot-functions",
+			"title": "Discord.js v14 basic bot functions.",
+			"postedOn": "11 November 2022",
+			"author": "Kip",
+			"lastEdit": "-",
+			"tags": "Discord.js",
+			"content": "For another project I wanted to write a discord bot. And in some development discords I have meet people having a hard time making one. So why not share it!? I made the bot public sooner then was planned to help those people. So it's still in development. "
+		}
+	],
+	"snippets": [
+		{ "itemId": "1658945898000", "URLid":"a1748630880c7ea1dd5500312b2743a2", "title":"On click dynamically created elements.", "postedOn":"24 June 2022", "author":"Kip", "lastEdit":"-", "tags": "Snippet", "content":"When an element is dynamically created in the document/website the normal <xmp>$('.addedElement').click(function(e){</xmp> / click function doesn't work. The snippet below will solve that issue for u.<br><br>When clicked on any element, dynamically added or not, with the class <xmp>addedElement</xmp> will run the function." }
+	]
+}
