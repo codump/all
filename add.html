@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>♻ Codump - Dumped codes ♻</title>
+<meta charset="UTF-8">
+<meta name="description" content="Snippets and scripts of code dumped to re-use over and over again." />
+<meta name="keywords" content="jQuery, javascript, css, html, php" />
+<meta name="copyright" content="kipBO" />
+<meta name="author" content="kipBO" />
+
+<link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+<link rel="alternate icon" class="js-site-favicon" type="image/png"
+	href="https://github.githubassets.com/favicons/favicon.png">
+<link rel="icon" class="js-site-favicon" type="image/svg+xml"
+	href="https://github.githubassets.com/favicons/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css?v=1" />
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="include/includeHTML.js"></script>
+<script type="text/javascript" src="jq.js?v=1"></script>
+</head>
+<body>
+	<div id="load">
+		<div id="loader">
+			<div id="loadtxt1">
+				<b>Co<span>de</span></b>
+			</div>
+			<div id="loadtxt2">
+				<b><span>d</span>ump</b>
+			</div>
+			<div id="progress"></div>
+			<div id="progress2"></div>
+		</div>
+	</div>
+	<div id="Tmenu">
+		<div id="TmIn">
+			<div id="TmInL">
+				<b><a href="https://codump.github.io/">Co<span>d</span>ump</a></b>
+			</div>
+			<div id="TmInM" tabindex="-1">
+				<form action="https://github.com/search?q=org:codump+" target="_blank">
+					<img src="https://raw.githubusercontent.com/codump/codump.github.io/gh-pages/images/search.png" alt="" /><input type="text" name="search"
+						id="search" class="inputmain"
+						placeholder="Send out a leprechaun to go search what u are looking for..." autocomplete="off"
+						value="" />
+				</form>
+			</div>
+			<div id="TmInR">
+				<div id="TmInLI">
+					<a class="github-button" href="https://github.com/codump"
+						data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large"
+						data-show-count="true" aria-label="Follow @codump on GitHub">Follow @codump</a>
+				</div>
+				<a href="https://github.com/codump" target="_new">
+					<div class="TmInSU">
+						GitHub
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<div data-src="include/menu.html?v=1"></div>
+	<div id="main">
+		<a name="top" class="anchor"></a>
+		<h1>♻ Make new object for JSON file. ♻</h1>
+		<br/>
+		This tool outputs a new JSON object that you can copy and paste into the JSON file.<br/>
+		<br/>
+		<hr/>
+		<br/>
+		<input type="text" id="title" value="" placeholder="Title" /> <input type="text" id="URLid" value="" placeholder="URL identifier" /> <input type="text" name="postedOn" id="postedOn" value="" placeholder="Posted on" /> <input type="text" name="author" id="author" value="" placeholder="Author" /><br/>
+		<textarea id="content" placeholder="Content.."></textarea>
+		<script type="text/javascript">
+			var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+			var d = new Date();
+			var day = d.getDate();
+			var year = d.getFullYear();
+			var name = month[d.getMonth()];
+			document.getElementById("postedOn").setAttribute('value', day+' '+name+' '+year);
+		</script>
+		<br>
+		<input id="test" type="submit" class="greenButton" value="TEST OUTPUT" /> <input id="show" type="submit" class="blueButton" value="SHOW OUTPUT" />
+		<div class="clear"></div>
+		<textarea id="showArea" style="display:none;"></textarea>
+		<div id="testDiv"></div>
+	</div>
+	
+	<div class="clear"></div>
+	<div data-src="include/footer.html?v=1"></div>
+</body>
+</html>
