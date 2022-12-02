@@ -25,6 +25,6 @@
  			"author":"Kip",
  			"lastEdit":"-",
 			"content":"Often we have a menu, modal or any other element that we want to close when you click outside of it. Therefor this little snippet that's using jQuery. "
- 		},
+ 		}
 	]
 }
