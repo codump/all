@@ -19,7 +19,7 @@
 		{ "itemId": "1658945898000", "URLid":"a1748630880c7ea1dd5500312b2743a2", "title":"On click dynamically created elements.", "postedOn":"24 June 2022", "author":"Kip", "lastEdit":"-", "tags": "Snippet", "content":"When an element is dynamically created in the document/website the normal <xmp>$('.addedElement').click(function(e){</xmp> / click function doesn't work. The snippet below will solve that issue for u.<br><br>When clicked on any element, dynamically added or not, with the class <xmp>addedElement</xmp> will run the function." },
 		{
  			"itemId":"1670016275817",
- 			"URLid":"6603c71c1bc40883a61f78d724a0e5a5",
+ 			"URLid":"",
  			"title":"Close a menu or element when clicked anywhere",
  			"postedOn":"2 December 2022",
  			"author":"Kip",
