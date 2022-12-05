@@ -131,7 +131,7 @@ $(document).on('click', '.tag', function () {
 	$('.tag').removeClass('active');
 	$(this).addClass('active');
 	document.getElementById("posts").innerHTML = "";
-	fetch('json/posts.json?v=2.4')
+	fetch('json/posts.json?v=11')
 		.then(function (response) {
 			return response.json();
 		})
@@ -165,7 +165,7 @@ $(document).on('click', '.tag', function () {
 // document ready //
 
 // posts //
-fetch('json/posts.json?v=2.4')
+fetch('json/posts.json?v=11')
 .then(function (response) {
     return response.json();
 })
@@ -212,19 +212,21 @@ function appendSnippets(data) {
         mainContainer.appendChild(div);
 		
 		var gistId = data[i].URLid;
-		var printGist = function(gist) {
-			console.log(gist.repo, ' (' + gist.description + ') :');
-    		console.log(gist.div);
-			$('#Gist-'+gistId).html('<link rel="stylesheet" href="'+gist.stylesheet+'" />'+gist.div);
-			//alert(gist.stylesheet);
-		};
-		$.ajax({ 
-			url: 'https://gist.github.com/'+data[i].URLid+'.json', 
-			dataType: 'jsonp',  
-			success : printGist
-		});
+		getGist(gistId);
+		
 		
     }
+}
+ function getGist (URLid){
+	var printGist = function (gist) {
+		console.log(gist.repo, ' (' + gist.description + ') :');
+		$('#Gist-' + URLid).html('<link rel="stylesheet" href="' + gist.stylesheet + '" />' + gist.div);
+	};
+	$.ajax({
+		url: 'https://gist.github.com/' + URLid + '.json',
+		dataType: 'jsonp',
+		success: printGist
+	});
 }
 // posts //
 
