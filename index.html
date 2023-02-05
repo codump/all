@@ -4,23 +4,30 @@
 <title>♻ Codump - Dumped codes ♻</title>
 <meta charset="UTF-8">
 <meta name="description" content="Snippets and scripts of code dumped to re-use over and over again." />
-<meta name="keywords" content="jQuery, JavaScript, CSS, HTML, PHP, discord.js" />
+<meta name="keywords" content="jQuery, JavaScript, CSS, HTML, PHP" />
 <meta name="copyright" content="kipBO" />
 <meta name="author" content="kipBO" />
-  
+
 <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
-<link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
-<link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+<link rel="alternate icon" class="js-site-favicon" type="image/png"
+	href="https://github.githubassets.com/favicons/favicon.png">
+<link rel="icon" class="js-site-favicon" type="image/svg+xml"
+	href="https://github.githubassets.com/favicons/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/one-dark.css" />
 
-<link rel="stylesheet" href="style.css?v=2" />
+<link rel="stylesheet" href="style.css?v=1.7i" />
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="include/includeHTML.js"></script>
-<script type="text/javascript" src="jq.js?v=2.5"></script>
+<script type='text/javascript' > 
+	var baseURL = 'https://codump.github.io/';
+	var jsonVersion = 18; 
+</script>
+<script type="text/javascript" src="js/search.js?v=1.9a"></script>
+<script type="text/javascript" src="jq.js?v=1.9a"></script>
 </head>
 <body>
 	<div id="load">
@@ -41,12 +48,13 @@
 				<b><a href="https://codump.github.io/">Co<span>d</span>ump</a></b>
 			</div>
 			<div id="TmInM" tabindex="-1">
-				<form action="https://github.com/search?q=org:codump+" target="_blank">
-					<img src="https://raw.githubusercontent.com/codump/codump.github.io/gh-pages/images/search.png" alt="" /><input type="text" name="search"
+				<form id="searchForm">
+					<img src="https://codump.dennizvd.com/images/search.png" alt="" /><input type="text" name="search"
 						id="search" class="inputmain"
 						placeholder="Send out a leprechaun to go search what u are looking for..." autocomplete="off"
 						value="" />
 				</form>
+				<div id="results"><div id="resultsSnippets"></div><div id="resultsScripts"></div></div>
 			</div>
 			<div id="TmInR">
 				<div id="TmInLI">
@@ -63,7 +71,7 @@
 		</div>
 	</div>
 
-	<div data-src="include/menu.html?v=1"></div>
+	<div data-src="include/menu.html?v=3"></div>
 	<div id="main">
 		<a name="top" class="anchor"></a>
 		<h1 style="color:#00b646;margin-bottom:3.2vh;">♻ Scripts and snippets of code dumped to re-use over and over again. ♻</h1>
@@ -75,7 +83,7 @@
 	</div>
 	
 	<div class="clear"></div>
-	<div data-src="include/footer.html?v=1"></div>
+	<div data-src="include/footer.html"></div>
 	
 </body>
 </html>
