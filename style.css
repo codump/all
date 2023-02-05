@@ -241,7 +241,7 @@ textarea {
 	display: inline-block;
 	width:calc(100% - 2vw);
 	text-align: center;
-	margin-top:0.6vw;
+	margin-top:0.4vw;
 	margin-bottom:0.4vw;
 }
 #results a {
