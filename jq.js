@@ -42,8 +42,6 @@ $(window).on('load', function () {
 	theDomHasLoaded();
 });
 
-var baseURL = 'https://codump.github.io/';
-
 // document ready //
 $(document).ready(function(){
 // document ready //
@@ -77,20 +75,7 @@ $("#progress2").animate({
 // loader //
 
 // header //
-$('#TmInM').on('focus', function () {
-    $('#TmInM').addClass('focus');
-	$('#search').focus();
-}).on('blur', function (e) {
-    $('#TmInM').removeClass('focus');
-	$('#search').blur();
-});
-$('#search').on('focus', function () {
-    $('#TmInM').addClass('focus');
-	$('#search').focus();
-}).on('blur', function (e) {
-    $('#TmInM').removeClass('focus');
-	$('#search').blur();
-});
+
 // header //
 
 // add page //
@@ -131,7 +116,7 @@ $(document).on('click', '.tag', function () {
 	$('.tag').removeClass('active');
 	$(this).addClass('active');
 	document.getElementById("posts").innerHTML = "";
-	fetch('json/posts.json?v=11')
+	fetch('json/posts.json?v='+jsonVersion)
 		.then(function (response) {
 			return response.json();
 		})
@@ -165,7 +150,7 @@ $(document).on('click', '.tag', function () {
 // document ready //
 
 // posts //
-fetch('json/posts.json?v=11')
+fetch('json/posts.json?v='+jsonVersion)
 .then(function (response) {
     return response.json();
 })
@@ -217,7 +202,7 @@ function appendSnippets(data) {
 		
     }
 }
- function getGist (URLid){
+function getGist (URLid){
 	var printGist = function (gist) {
 		console.log(gist.repo, ' (' + gist.description + ') :');
 		$('#Gist-' + URLid).html('<link rel="stylesheet" href="' + gist.stylesheet + '" />' + gist.div);
