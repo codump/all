@@ -19,6 +19,16 @@
 	"_commentSnippets": "Add snippet to top of snippets array so search will see the newest first.",
 	"snippets": [
 		{
+			"itemId":"1675785561188",
+			"URLid":"e5f3b46d96e0ad4574a7ea1ddd60ee3a",
+			"title":"Woocommerce CSV import products as draft",
+			"postedOn":"7 February 2023",
+			"author":"Kip",
+			"lastEdit":"-",
+			"tags": "Snippet",
+		   "content":"I was helping a buddy with his Woocommerce webshop to import products via a csv file. The problem we encountered was that the products are imported and directly published. Therefor I made this snippet as a must-use plugin to import them as a draft. First create a new folder called <xmp>mu-plugins</xmp> inside the <xmp>wp-content</xmp> folder. Then create a new script inside the mu-plugins folder called <xmp>draft-import.php</xmp> and paste the snippet in it, save and u are done."
+		},
+		{
 			"itemId": "1670016275817",
 			"URLid": "6603c71c1bc40883a61f78d724a0e5a5",
 			"title": "Close a menu or element when clicked anywhere",
