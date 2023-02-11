@@ -19,6 +19,16 @@
 	"_commentSnippets": "Add snippet to top of snippets array so search will see the newest first.",
 	"snippets": [
 		{
+			"itemId":"1676128585697",
+			"URLid":"cd4a9e3cd714f366430939bb481f3d29",
+			"title":"Version push to cache in JavaScript",
+			"postedOn":"11 February 2023",
+			"author":"Kip",
+			"lastEdit":"-",
+			"tags": "Snippet",
+		   "content":"Sometimes we make changes in a CSS or JS file and it doesn't show up. That's because of the files being cached by the browser and it's using the old version of the file. As a solution in PHP I had a variable that contains a version and echoed that behind the file path to make the browser update the cache. In JS we can't do exactly the same as we can't echo inline. But I did make a snippet that's using the same workflow of only changing 1 variable for all files. The only thing you need to do is alter the value of <xmp>pushVersion</xmp> and it will refresh all CSS files with <xmp>?v=pushVersion</xmp> in the file path. For JS files you need to <xmp>addScript</xmp> it on the bottom of the snippet to make it a dynamically loaded script."
+		},
+		{
 			"itemId":"1675785561188",
 			"URLid":"e5f3b46d96e0ad4574a7ea1ddd60ee3a",
 			"title":"Woocommerce CSV import products as draft",
