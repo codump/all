@@ -116,7 +116,7 @@ $(document).on('click', '.tag', function () {
 	$('.tag').removeClass('active');
 	$(this).addClass('active');
 	document.getElementById("posts").innerHTML = "";
-	fetch('json/posts.json?v='+jsonVersion)
+	fetch('json/posts.json?v='+pushVersion)
 		.then(function (response) {
 			return response.json();
 		})
@@ -150,7 +150,7 @@ $(document).on('click', '.tag', function () {
 // document ready //
 
 // posts //
-fetch('json/posts.json?v='+jsonVersion)
+fetch('json/posts.json?v='+pushVersion)
 .then(function (response) {
     return response.json();
 })
