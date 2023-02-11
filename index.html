@@ -19,18 +19,16 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/one-dark.css" />
 
-<link rel="stylesheet" href="style.css?v=1.7j" />
+<link rel="stylesheet" href="style.css?v=pushVersion" />
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="include/includeHTML.js"></script>
 <script type='text/javascript' > 
-	var baseURL = 'https://codump.github.io/';
-	var jsonVersion = 19; 
+	const baseURL = 'https://codump.github.io/';
+	const pushVersion = '1.0.19b'
 </script>
-<script type="text/javascript" src="js/search.js?v=1.9a"></script>
-<script type="text/javascript" src="jq.js?v=1.9a"></script>
 </head>
 <body>
-	<div id="load">
+	<div id="load" style="display:none;">
 		<div id="loader">
 			<div id="loadtxt1">
 				<b>Co<span>de</span></b>
@@ -83,7 +81,24 @@
 	</div>
 	
 	<div class="clear"></div>
-	<div data-src="include/footer.html"></div>
+	<div data-src="include/footer.html?v=4"></div>
 	
+	<script type="text/javascript">
+		// Only for demo, not script related. //
+		const getUrl = window.location.href
+		Array.from(document.getElementsByTagName("link")).forEach((childLink) => { 
+			let newHref = childLink.href.replaceAll('?v=pushVersion', `?v=${pushVersion}`)
+			childLink.setAttribute('href', newHref)
+		})
+		const addScript1 = document.createElement("script")
+		addScript1.setAttribute("src", `${getUrl}/jq.js?v=${pushVersion}`)
+		addScript1.setAttribute("type", "text/javascript")
+		document.head.appendChild(addScript1)
+		const addScript2 = document.createElement("script")
+		addScript2.setAttribute("src", `${getUrl}/js/search.js?v=${pushVersion}`)
+		addScript2.setAttribute("type", "text/javascript")
+		document.head.appendChild(addScript2)
+		// Only for demo, not script related. //
+	</script>
 </body>
 </html>
