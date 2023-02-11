@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	    //fetch JSON
 	    if (keyword != '') {
 	        //Fetch API
-	        fetch('json/posts.json?v='+jsonVersion)
+	        fetch('json/posts.json?v='+pushVersion)
 	        .then(res => res.json())
 	        .then((out) => {
 				function searchScripts(term) {
