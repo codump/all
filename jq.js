@@ -216,7 +216,7 @@ function getGist (URLid){
 // posts //
 
 // github buttons //
-document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
+theDomHasLoaded();
 function theDomHasLoaded(e) {
   console.log('DOM has loaded, appending GH buttons script')
   let newScript = document.createElement('script');
