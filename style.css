@@ -261,6 +261,7 @@ textarea {
 }
 #TmInR {
 	float: right;
+	width:15vw;
 }
 .TmInSU {
 	display: block;
