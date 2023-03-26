@@ -90,15 +90,9 @@
 			let newHref = childLink.href.replaceAll('?v=pushVersion', `?v=${pushVersion}`)
 			childLink.setAttribute('href', newHref)
 		})
-		const addScript1 = document.createElement("script")
-		addScript1.setAttribute("src", `${getUrl}/jq.js?v=${pushVersion}`)
-		addScript1.setAttribute("type", "text/javascript")
-		document.head.appendChild(addScript1)
-		const addScript2 = document.createElement("script")
-		addScript2.setAttribute("src", `${getUrl}/js/search.js?v=${pushVersion}`)
-		addScript2.setAttribute("type", "text/javascript")
-		document.head.appendChild(addScript2)
 		// Only for demo, not script related. //
 	</script>
+	<script src="jq.js?v=1.1"></script>
+	<script src="js/search.js?v=1.1"></script>
 </body>
 </html>
