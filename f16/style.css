@@ -18,7 +18,7 @@ a:hover {
 	display: block;
 	padding:1vw;
 	width:calc(100% - 3vw);
-	background: #268df6;
+	background: #00b646;
 	float:left;
 	margin-right:1vw;
 	margin-top:1vh;
@@ -32,7 +32,7 @@ a:hover {
 .blueButton:hover {
 	display: block;
 	padding:1vw;
-	background: #0f65bb;
+	background: #06923c;
 	color:#FFF;
 	line-height:0vw;
 	border-radius:4px;
@@ -59,7 +59,7 @@ label {
 	user-select: none;
 }
 input[type='checkbox'] {
-	filter: hue-rotate(280deg);
+	/*filter: hue-rotate(280deg);*/
 	cursor: pointer;
 	height: 16px;
 	width: 16px;
@@ -138,7 +138,7 @@ input[type='checkbox'] {
 }
 #main h1 {
 	font-size:1.4vw;
-	color:#268df6;
+	color:#00b646;
 	font-weight: normal;
 	margin-top:4vh;
 }
