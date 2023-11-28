@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DCS F-16</title>
+<meta charset="UTF-8">
+<meta name="description" content="DCS checklist for F-16" />
+<meta name="keywords" content="DCS, F-16" />
+<meta name="copyright" content="kipBO" />
+<meta name="author" content="kipBO" />
+
+<link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+<link rel="alternate icon" class="js-site-favicon" type="image/png"
+	href="https://github.githubassets.com/favicons/favicon.png">
+<link rel="icon" class="js-site-favicon" type="image/svg+xml"
+	href="https://github.githubassets.com/favicons/favicon.svg">
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<link rel="stylesheet" href="style.css?v=1.0.19q" />
+
+</head>
+<body>
+
+	<div id="Lmenu">
+		<h2>F-16 shortcuts: </h2>
+		<input type="checkbox" id="info-all" name="info-all" value="info-all" checked> <label for="info-all"> Show/hide all extra information.</label>
+		<a href="#top" class="blueButton"><strike>Cold start</strike></a>
+		<a href="#radar" class="blueButton">Radar</a>
+		<a href="#tgp" class="blueButton">Targeting pod</a>
+	</div>
+
+	<div id="main">
+		<a name="top" class="anchor"></a>
+		<h1>🛩 DCS F-16 checklist. 🛩</h1>
+		Welcome to the F-16 checklist, a comprehensive guide designed to demystify the myriad buttons and switches within the cockpit of the F-16 Fighting Falcon. This checklist is your key to understanding the functions associated with each button, ensuring that you have a clear and concise reference for operating this cutting-edge fighter aircraft.
+		<br/>
+		<a name="radar" class="anchor"></a><hr/>
+		<h1>RADAR <small>(MFD page = FCR)</small> <input type="checkbox" class="all-others" id="info-radar" name="info-radar" value="info-radar" checked> <label for="info-radar" class="inline-label"> Show extra information.</label></h1>
+		<div class="fullinfo" id="info-radardiv">
+			There is no extra information at this moment.
+		</div>
+		<table>
+			<tr class="black"><td colspan="2">MFD buttons</td></tr>
+			<tr><td class="td1">NORM - EXP</td><td class="td2">NORM, Normal zoomed out view. EXP, Expand zoomed in view.</td></tr>
+			<tr><td class="td1">A6 - A2 - A1</td><td class="td2">Azimuth (scan volume left-right) of 60°, 20° and 10° for radar.</td></tr>
+			<tr><td class="td1">1B - 2B - 3B</td><td class="td2">Bar (scan volume up-down) steps for radar.</td></tr>
+			<tr><td colspan="2"></td></tr>
+			<tr class="black"><td colspan="2">CRM / RWS mode, Range While Search. <span class="text-g">Shows active radar pings.</span></td></tr>
+			<tr><td class="td1">1x TMS up</td><td class="td2">SAM, Situational Awareness Mode. Soft-lock, enemy does not know it's tracked.</td></tr>
+			<tr><td class="td1">2x TMS up</td><td class="td2">STT, Single Track Target.</td></tr>
+			<tr><td class="td1">TMS down</td><td class="td2">Unlock target.</td></tr>
+			<tr><td class="td1">TMS left, short</td><td class="td2">Request IFF friend identify responce.</td></tr>
+			<tr><td class="td1">TMS right, long</td><td class="td2">Switch to RCM / TWS mode.</td></tr>
+			<tr><td class="td1">DMS down</td><td class="td2">Make page SOI.</td></tr>
+			<tr><td class="td1">DMS left</td><td class="td2">Toggle left MFD pages.</td></tr>
+			<tr><td colspan="2"></td></tr>
+			<tr class="black"><td colspan="2">CRM / TWS mode, Track While Scan. <span class="text-g">Shows prediction of targets flightpath.</span></td></tr>
+			<tr><td class="td1">1x TMS up</td><td class="td2">Make system target / NO-LOCK</td></tr>
+			<tr><td class="td1">2x TMS up</td><td class="td2">STT, Single Track Target.</td></tr>
+			<tr><td class="td1">TMS right, short</td><td class="td2">With cursor not on any target: Make all targets a system target.</td></tr>
+			<tr><td class="td1">TMS right, short</td><td class="td2">With cursor on a target: LOCK closest target OR switch to next target.</td></tr>
+			<tr><td class="td1">TMS down</td><td class="td2">Unlock target / dump.</td></tr>
+		</table>
+		<a name="tgp" class="anchor"></a><hr/>
+		<h1>TARGETING POD <small>(MFD page = TGP)</small> <input type="checkbox" class="all-others" id="info-tgp" name="info-tgp" value="info-tgp" checked> <label for="info-tgp" class="inline-label"> Show extra information.</label></h1>
+		<div class="fullinfo" id="info-tgpdiv">
+			There is no extra information at this moment.
+		</div>
+		<table>
+			<tr class="black"><td colspan="2">MFD buttons</td></tr>
+			<tr><td class="td1" style="width:160px;">TV - WHOT - BHOT</td><td class="td2">TV, television view. WHOT, white hot IR view. BHOT, black hot IR view.</td></tr>
+			<tr><td colspan="2"></td></tr>
+			<tr class="black"><td colspan="2">CCRP mode, Continuously Computed Release Point. <span class="text-g">Needs to be selected as bombing mode on the weapon page.</span></td></tr>
+			<tr><td class="td1">TMS up</td><td class="td2">Point track (auto-follow).</td></tr>
+			<tr><td class="td1">2x TMS down</td><td class="td2">Center zero, swivel TGP to current STP (steerpoint).</td></tr>
+			<tr><td class="td1">TMS left</td><td class="td2">Cycle TV/WHOT/BHOT.</td></tr>
+			<tr><td class="td1">TMS right</td><td class="td2">Area track (STP) 3x max.</td></tr>
+		</table>
+		<hr/>
+	</div>
+	
+	<div class="clear"></div>
+
+	<script src="script.js?v=1.0.1b" type="text/javascript"></script>
+</body>
+</html>
