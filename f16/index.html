@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>DCS F-16</title>
+<title>DCS F-16 checklist</title>
 <meta charset="UTF-8">
 <meta name="description" content="Welcome to the F-16 checklist, a comprehensive guide designed to demystify the myriad buttons and switches within the cockpit of the F-16 Fighting Falcon. This checklist is your key to understanding the functions associated with each button, ensuring that you have a clear and concise reference for operating this cutting-edge fighter aircraft." />
 <meta name="keywords" content="DCS, F-16" />
@@ -19,7 +19,7 @@
 	href="https://github.githubassets.com/favicons/favicon.svg">
 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-<link rel="stylesheet" href="style.css?v=1.0.19r" />
+<link rel="stylesheet" href="style.css?v=1.0.19w" />
 
 </head>
 <body>
@@ -40,11 +40,19 @@
 		<a name="radar" class="anchor"></a><hr/>
 		<h1>RADAR <small>(MFD page = FCR)</small> <input type="checkbox" class="all-others" id="info-radar" name="info-radar" value="info-radar" checked> <label for="info-radar" class="inline-label"> Show extra information.</label></h1>
 		<div class="fullinfo" id="info-radardiv">
-			There is no extra information at this moment.
+			Symbology CRM / RWS mode:
+			<table>
+				<tr><td class="tdI1"><img src="https://codump.github.io/f16/img/RWS-radar-cursor.jpg" alt="" /></td><td class="tdI2">Cursor with highest and lowest scan altitude.</td><td class="tdI1"><img src="https://codump.github.io/f16/img/RWS-radar-steerpoint.jpg" alt="" /></td><td class="tdI2">Steerpoint.</td></tr>
+
+				<tr><td class="tdI1"><img src="https://codump.github.io/f16/img/RWS-radar-target.jpg" alt="" /></td><td class="tdI2">Current ping on target, gets darker after ping.</td><td class="tdI1"><img src="https://codump.github.io/f16/img/RWS-radar-softlock.jpg" alt="" /></td><td class="tdI2">SAM, Soft-lock.</td></tr>
+
+				<tr><td class="tdI1"><img src="https://codump.github.io/f16/img/RWS-radar-sttlock.jpg" alt="" /></td><td class="tdI2">STT lock.</td></tr>
+			</table>
 		</div>
 		<table>
 			<tr class="black"><td colspan="2">MFD buttons</td></tr>
 			<tr><td class="td1">NORM - EXP</td><td class="td2">NORM, Normal zoomed out view. EXP, Expand zoomed in view.</td></tr>
+			<tr><td class="td1">🡙40 - 🡙80 - 🡙160</td><td class="td2">View range, lines on right side of MFD are 25%, 50% and 75% of the range.</td></tr>
 			<tr><td class="td1">A6 - A2 - A1</td><td class="td2">Azimuth (scan volume left-right) of 60°, 20° and 10° for radar.</td></tr>
 			<tr><td class="td1">1B - 2B - 3B</td><td class="td2">Bar (scan volume up-down) steps for radar.</td></tr>
 			<tr><td colspan="2"></td></tr>
@@ -52,8 +60,8 @@
 			<tr><td class="td1">1x TMS up</td><td class="td2">SAM, Situational Awareness Mode. Soft-lock, enemy does not know it's tracked.</td></tr>
 			<tr><td class="td1">2x TMS up</td><td class="td2">STT, Single Track Target.</td></tr>
 			<tr><td class="td1">TMS down</td><td class="td2">Unlock target.</td></tr>
-			<tr><td class="td1">TMS left, short</td><td class="td2">Request IFF friend identify responce.</td></tr>
-			<tr><td class="td1">TMS right, long</td><td class="td2">Switch to RCM / TWS mode.</td></tr>
+			<tr><td class="td1">TMS left, short</td><td class="td2">Request IFF, Identification Friend-or-Foe responce.</td></tr>
+			<tr><td class="td1">TMS right, long</td><td class="td2">Switch to CRM / TWS mode.</td></tr>
 			<tr><td class="td1">DMS down</td><td class="td2">Make page SOI.</td></tr>
 			<tr><td class="td1">DMS left</td><td class="td2">Toggle left MFD pages.</td></tr>
 			<tr><td colspan="2"></td></tr>
