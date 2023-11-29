@@ -22,7 +22,6 @@ a:hover {
 	float:left;
 	margin-right:1vw;
 	margin-top:1vh;
-	margin-bottom:0.1vh;
 	color:#FFF;
 	line-height:0vw;
 	cursor: pointer;
@@ -162,7 +161,7 @@ input[type='checkbox'] {
 	padding-right:10px;
 }
 #main td.td1 {
-	width:125px;
+	width:130px;
 }
 #main table tr:nth-child(odd) .td1 {
 	color: #CCC;
@@ -178,6 +177,41 @@ input[type='checkbox'] {
 #main table tr:nth-child(even) .td2 {
 	background: #151515;
 }
+#main table img {
+	width: 40px;
+	height: 40px;
+}
+#main td.tdI1 {
+	width:40px;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+#main td.tdI2 {
+	height: 40px;
+	padding-top: 0;
+	padding-bottom: 0;
+	float: left;
+	text-align: left;
+	line-height: 40px;
+	width: calc(50% - 60px);
+}
+#main table tr:nth-child(odd) .tdI1 {
+	color: #CCC;
+	background: #151515;
+}
+#main table tr:nth-child(odd) .tdI2 {
+	background: #111;
+}
+#main table tr:nth-child(even) .tdI1 {
+	color: #CCC;
+	background: #111;
+}
+#main table tr:nth-child(even) .tdI2 {
+	background: #151515;
+}
+
 .black {
 	background: #000;
 }
@@ -187,9 +221,9 @@ input[type='checkbox'] {
 
 .fullinfo {
 	color: #ccc;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
 	border-top: 1px dashed #888;
 	border-bottom: 1px dashed #888;
 }
