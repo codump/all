@@ -8,8 +8,11 @@ $('#info-all').change(function() {
 		$('.fullinfo').css({"display": "none"});
 	}
 });
-
 $('.all-others').change(function() {
     var getId = $(this).attr('id'); 
 	$('#'+getId+'div').toggle();
+});
+
+$("#uncheckstart").on("click", function() {
+	$('.startlist').prop('checked', false);
 });
