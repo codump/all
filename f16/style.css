@@ -212,6 +212,36 @@ input[type='checkbox'] {
 	background: #151515;
 }
 
+#main .starttable {
+	font-size: 1vw;
+	border-collapse: collapse;
+	border: 0;
+}
+#main .starttable .std1 {
+	width: 25px;
+	font-size: 0.9vw;
+	vertical-align: text-top;
+	text-align: right;
+	padding-left: 0px;
+	padding-right: 8px;
+}
+.startlist {
+	filter: hue-rotate(280deg);
+}
+input[type='checkbox'].startlist {
+	width: 1.1vw;
+	height: 1.1vw;
+	margin-left: -0.5vw;
+}
+.startlabel {
+	font-size: 1vw;
+	text-decoration: none;
+	margin-top: 1px;
+}
+.startlabel:hover {
+	color: #FFF;
+}
+
 .black {
 	background: #000;
 }
