@@ -183,6 +183,9 @@ input[type='checkbox'] {
 	font-weight: normal;
 	margin-top:4vh;
 }
+#main h1.first {
+	margin-top:2vh;
+}
 #main hr {
 	height: 1px;
     background: #353535;
