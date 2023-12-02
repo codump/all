@@ -1,10 +1,10 @@
 body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size:0.9vw;
-	line-height:1.5vw;
+	font-size: 16px;
 	color:#fafafa;
 	background:#1a1919;
 	tab-size:1.3vw;
+	margin: 0;
 }
 a {
 	color:#268df6;
@@ -14,26 +14,24 @@ a {
 a:hover {
 	color:#fafafa;
 }
-.blueButton {
+.greenButton {
 	display: block;
-	padding:1vw;
-	width:calc(100% - 3vw);
+	padding: 1vw;
+	padding-top: 0.5vw;
+	padding-bottom: 0.5vw;
+	width:calc(100% - 2vw);
 	background: #00b646;
 	float:left;
-	margin-right:1vw;
 	margin-top:1vh;
 	color:#FFF;
-	line-height:0vw;
 	cursor: pointer;
 	border-radius:4px;
 	text-transform: uppercase;
 }
-.blueButton:hover {
+.greenButton:hover {
 	display: block;
-	padding:1vw;
 	background: #06923c;
 	color:#FFF;
-	line-height:0vw;
 	border-radius:4px;
 }
 .clear {
@@ -46,13 +44,10 @@ a:hover {
 	float: right;
 }
 label {
-	position: absolute;
-	font-size:0.9vw;
-	line-height: 25px;
-	margin-left: 3px;
-	margin-top: -2px;
+	font-size: 100%;
 	color:#bbb;
 	cursor: pointer;
+	vertical-align: top;
 	text-decoration: underline 1px dashed #888;
 	text-underline-offset: 4px;
 	user-select: none;
@@ -62,27 +57,48 @@ input[type='checkbox'] {
 	cursor: pointer;
 	height: 16px;
 	width: 16px;
-	line-height: 25px;
+	margin-right: 0;
+	/*line-height: 25px;*/
 }
 .inline-label {
-	margin-top: 1px;
+	font-size: 60%;
+	line-height: 200%;
+	margin-left: 3px;
+}
+
+#wrapper {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+#left {
+	width:18vw;
+	min-width:18vw;
+	height: 100vh;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	flex-grow: 1;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	resize: horizontal;
+}
+#right {
+	height: 100vh;
+	margin-left:1.5vw;
+	flex-grow: 3;
 }
 
 #Lmenu {
-	position:fixed;
-	top:0;
-	left:5vw;
-	width:18vw;
-	height:calc(100vh - 3.6vh);
-	margin-top:1vh;
-	padding-top:1.3vh;
-	padding-right:1vw;
+	margin-bottom:3.2vh;
 	background:#1a1919;
-	overflow-y:scroll;
+	overflow-y:hidden;
+	overflow-x: hidden;
 	z-index:9800;
+	line-height: 100%;
 }
 #Lmenu h2 {
-	font-size:1.1vw;
+	font-size: 130%;
 	font-weight: normal;
 	margin-top: 25px;
 }
@@ -94,28 +110,34 @@ input[type='checkbox'] {
 #Lmenu a:hover {
 	color:#fff;
 }
+.setDiv {
+	line-height: 150%;
+}
+.setDiv span {
+	user-select: none;
+}
 
-#Lmenu::-webkit-scrollbar {
-	width: 8px;
-	height: 8px;
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
 	border:1px solid #333;
 }
-#Lmenu::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
 	background: #252525;
 	margin:2px;
 }
-#Lmenu::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
 	background: #353535;
 	cursor: pointer;
 }
-#Lmenu::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
 	background: #268df6;
 }
 
 #main {
-	float:left;
-	width:60vw;
-	margin-left:26.7vw;
+	height: 100vh;
+	line-height: 140%;
+	overflow: auto;
 }
 #main a {
 	color:#268df6;
@@ -136,7 +158,7 @@ input[type='checkbox'] {
 	cursor:pointer;
 }
 #main h1 {
-	font-size:1.4vw;
+	font-size: 160%;
 	color:#00b646;
 	font-weight: normal;
 	margin-top:4vh;
@@ -157,6 +179,7 @@ input[type='checkbox'] {
 	border: 1px solid #333;
 }
 #main td {
+	line-height: 180%;
 	padding-left:10px;
 	padding-right:10px;
 }
@@ -189,11 +212,11 @@ input[type='checkbox'] {
 	float: left;
 }
 #main td.tdI2 {
-	height: 40px;
 	padding-top: 0;
 	padding-bottom: 0;
 	float: left;
 	text-align: left;
+	/* line height same as icons*/
 	line-height: 40px;
 	width: calc(50% - 60px);
 }
@@ -212,34 +235,48 @@ input[type='checkbox'] {
 	background: #151515;
 }
 
+#main h1 a#uncheckstart {
+	font-size: 60%;
+	user-select: none;
+}
 #main .starttable {
-	font-size: 1vw;
+	width: 50%;
+	float: left;
+	font-size: 110%;
 	border-collapse: collapse;
 	border: 0;
 }
 #main .starttable .std1 {
 	width: 25px;
-	font-size: 0.9vw;
+	font-size: 90%;
+	line-height: 150%;
 	vertical-align: text-top;
 	text-align: right;
 	padding-left: 0px;
-	padding-right: 8px;
+	padding-right: 4px;
 }
 .startlist {
 	filter: hue-rotate(280deg);
 }
 input[type='checkbox'].startlist {
-	width: 1.1vw;
-	height: 1.1vw;
+	width: 16px;
+	height: 16px;
 	margin-left: -0.5vw;
+	line-height: 125%;
 }
 .startlabel {
-	font-size: 1vw;
+	font-size: 100%;
+	line-height: 125%;
 	text-decoration: none;
-	margin-top: 1px;
 }
 .startlabel:hover {
 	color: #FFF;
+}
+.startlabelGreen {
+	color: #00b646;
+}
+.startlabelGreen:hover {
+	color: #00b646;
 }
 
 .black {
