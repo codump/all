@@ -24,7 +24,6 @@ a:hover {
 	float:left;
 	margin-top:1vh;
 	color:#FFF;
-	font-weight: bold;
 	letter-spacing: 1px;
 	line-height: 120%;
 	cursor: pointer;
@@ -116,6 +115,7 @@ input[type='checkbox'] {
 	color:#fff;
 }
 #fullscreenBtn {
+	font-family: 'arimo', Helvetica, Arial, sans-serif;
 	float: right;
 	padding: 0.3vw;
 	margin-top: -0.2vw;
