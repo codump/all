@@ -18,9 +18,11 @@
 	href="https://github.githubassets.com/favicons/favicon.png">
 <link rel="icon" class="js-site-favicon" type="image/svg+xml"
 	href="https://github.githubassets.com/favicons/favicon.svg">
+<script src="https://kit.fontawesome.com/f072e2e626.js" crossorigin="anonymous"></script>
 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-<link rel="stylesheet" href="style.css?v=1.0.20q" />
+<link rel="stylesheet" href="style.css?v=1.0.20r" />
+
 
 </head>
 <body onload="">
@@ -28,7 +30,7 @@
 <div id="wrapper">
 	<div id="left">
 	<div id="Lmenu">
-		<h2>Settings <button style="float: right;" onclick="openFullscreen()">Fullscreen</button></h2>
+		<h2>Settings <button id="fullscreenBtn" onclick="openFullscreen()"><i class="fa-solid fa-expand"></i> Fullscreen</button></h2>
 		<div class="setDiv">
 			<span>Font size:</span> <span id="fontSize">16</span><br/>
 			<input class="none" type="range" min="12" max="24" value="16" id="textSlider" step="0.5"><br/>
@@ -36,9 +38,9 @@
 			<!--Test value: <span id="test">testDiv</span>-->
 		</div>
 		<h2>F-16 shortcuts</h2>
-		<a href="#start" class="greenButton">Cold start</a>
-		<a href="#radar" class="greenButton">Radar</a>
-		<a href="#tgp" class="greenButton">Targeting pod</a>
+		<a href="#start" class="greenButton"><i class="fa-regular fa-snowflake fa-fw sideIcon"></i> Cold start</a>
+		<a href="#radar" class="greenButton"><i class="fa-solid fa-satellite-dish fa-fw sideIcon"></i> Radar</a>
+		<a href="#tgp" class="greenButton"><i class="fa-solid fa-bullseye fa-fw sideIcon"></i> Targeting pod</a>
 		
 	</div>
 	</div>
@@ -46,7 +48,7 @@
 	<div id="right">
 	<div id="main">
 		<a name="top" class="anchor"></a>
-		<h1>🛩 DCS F-16 checklist. 🛩</h1>
+		<h1><i class="fa-solid fa-jet-fighter fa-rotate-180 fa-fw"></i> DCS F-16 checklist <i class="fa-solid fa-jet-fighter fa-fw"></i></h1>
 		Welcome to the F-16 checklist, a comprehensive guide designed to demystify the myriad buttons and switches within the cockpit of the F-16 Fighting Falcon. This checklist is your key to understanding the functions associated with each button, ensuring that you have a clear and concise reference for operating this cutting-edge fighter aircraft. The checklist is specifically tailored for optimal use on a compact tablet, ensuring convenience for easy accessibility during your flight.
 		<br/>
 		<a name="start" class="anchor"></a><hr/>
@@ -138,6 +140,6 @@
 
 </div>
 
-	<script src="script.js?v=1.0.1h" type="text/javascript"></script>
+	<script src="script.js?v=1.0.1i" type="text/javascript"></script>
 </body>
 </html>
