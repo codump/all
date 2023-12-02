@@ -106,6 +106,12 @@ input[type='checkbox'] {
 	margin-top: 25px;
 	line-height: 100%;
 }
+#Lmenu h2.first {
+	font-size: 130%;
+	font-weight: normal;
+	margin-top:4vh;
+	line-height: 100%;
+}
 #Lmenu a {
 	color:#fafafa;
 	text-decoration:none;
@@ -182,9 +188,6 @@ input[type='checkbox'] {
 	color:#00b646;
 	font-weight: normal;
 	margin-top:4vh;
-}
-#main h1.first {
-	margin-top:2vh;
 }
 #main hr {
 	height: 1px;
