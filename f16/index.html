@@ -7,6 +7,7 @@
 <meta name="keywords" content="DCS, F-16" />
 <meta name="copyright" content="kipBO" />
 <meta name="author" content="kipBO" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta property="og:image" content="https://global.discourse-cdn.com/infiniteflight/optimized/3X/3/a/3a5884d0b78817af95b0de07ee420521b76cd7b5_2_819x376.jpg" />
 <!-- Include this to make the og:image larger -->
@@ -19,39 +20,87 @@
 	href="https://github.githubassets.com/favicons/favicon.svg">
 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-<link rel="stylesheet" href="style.css?v=1.0.20b" />
+<link rel="stylesheet" href="style.css?v=1.0.20p" />
 
 </head>
-<body>
+<body onload="">
 
+<div id="wrapper">
+	<div id="left">
 	<div id="Lmenu">
-		<h2>F-16 shortcuts: </h2>
-		<input type="checkbox" id="info-all" name="info-all" value="info-all" checked> <label for="info-all"> Show/hide all extra information.</label>
-		<a href="#start" class="blueButton">Cold start</a>
-		<a href="#radar" class="blueButton">Radar</a>
-		<a href="#tgp" class="blueButton">Targeting pod</a>
+		<!--<div id="demo"></div><button onclick="set_data()"></button>-->
+		<h2>Settings <button style="float: right;" onclick="openFullscreen()">Fullscreen</button></h2>
+		<div class="setDiv">
+			<span>Font size:</span> <span id="fontSize">16</span><br/>
+			<input class="none" type="range" min="12" max="24" value="16" id="textSlider" step="0.5"><br/>
+		<label for="info-all">Show/hide all extra information:</label> <input type="checkbox" id="info-all" name="info-all" value="info-all" checked> <br/>
+		</div>
+		<h2>F-16 shortcuts</h2>
+		<a href="#start" class="greenButton">Cold start</a>
+		<a href="#radar" class="greenButton">Radar</a>
+		<a href="#tgp" class="greenButton">Targeting pod</a>
+		<a href="#start" class="greenButton">Cold start</a>
+		<a href="#radar" class="greenButton">Radar</a>
+		<a href="#tgp" class="greenButton">Targeting pod</a>
+		<a href="#start" class="greenButton">Cold start</a>
+		<a href="#radar" class="greenButton">Radar</a>
+		<a href="#tgp" class="greenButton">Targeting pod</a>
+		<a href="#start" class="greenButton">Cold start</a>
+		<a href="#radar" class="greenButton">Radar</a>
+		<a href="#tgp" class="greenButton">Targeting pod</a>
+		<a href="#start" class="greenButton">Cold start</a>
+		<a href="#radar" class="greenButton">Radar</a>
+		<a href="#tgp" class="greenButton">Targeting pod</a>
+		<a href="#start" class="greenButton">Cold start</a>
+		<a href="#radar" class="greenButton">Radar</a>
+		<a href="#tgp" class="greenButton">Targeting pod</a>
+		<a href="#start" class="greenButton">Cold start</a>
+		<a href="#radar" class="greenButton">Radar</a>
+		<a href="#tgp" class="greenButton">Targeting pod</a>
+		<a href="#start" class="greenButton">Cold start</a>
+		<a href="#radar" class="greenButton">Radar</a>
+		<a href="#tgp" class="greenButton">Targeting pod</a>
+		<a href="#start" class="greenButton">Cold start</a>
+		<a href="#radar" class="greenButton">Radar</a>
+		<a href="#tgp" class="greenButton">Targeting pod</a>
+	</div>
 	</div>
 
+	<div id="right">
 	<div id="main">
 		<a name="top" class="anchor"></a>
 		<h1>🛩 DCS F-16 checklist. 🛩</h1>
-		Welcome to the F-16 checklist, a comprehensive guide designed to demystify the myriad buttons and switches within the cockpit of the F-16 Fighting Falcon. This checklist is your key to understanding the functions associated with each button, ensuring that you have a clear and concise reference for operating this cutting-edge fighter aircraft.
+		Welcome to the F-16 checklist, a comprehensive guide designed to demystify the myriad buttons and switches within the cockpit of the F-16 Fighting Falcon. This checklist is your key to understanding the functions associated with each button, ensuring that you have a clear and concise reference for operating this cutting-edge fighter aircraft. The checklist is specifically tailored for optimal use on a compact tablet, ensuring convenience for easy accessibility during your flight.
 		<br/>
 		<a name="start" class="anchor"></a><hr/>
-		<h1>COLD START &nbsp;<a href="javascript:" id="uncheckstart" style="font-size: 0.9vw;">Uncheck all in list.</a></h1>
+		<h1>COLD START &nbsp;<a id="uncheckstart">Uncheck all in list.</a></h1>
 		<table class="starttable">
-			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1"> <label for="start1" class="startlabel"> Close canopy (Ctrl+C) and lock it.</label></td><td class="std1">12</td><td class="std2"><input type="checkbox" class="startlist" id="start12"> <label for="start12" class="startlabel"> Turn landing lights ON.</label></td></tr>
-			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2"> <label for="start2" class="startlabel"> ELEC main power ON.</label></td><td class="std1">13</td><td class="std2"><input type="checkbox" class="startlist" id="start13"> <label for="start13" class="startlabel"> Set stores config to Cat1 for A-A and Cat2 for A-G.</label></td></tr>
-			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3"> <label for="start3" class="startlabel"> Set ENG jet fuel to start 2.</label></td><td class="std1">14</td><td class="std2"><input type="checkbox" class="startlist" id="start14"> <label for="start14" class="startlabel"> Turn HUD SYM up.</label></td></tr>
-			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="startlist" id="start4"> <label for="start4" class="startlabel"> Wait for 20% RPM.</label></td><td class="std1">15</td><td class="std2"><input type="checkbox" class="startlist" id="start15"> <label for="start15" class="startlabel"> Turn FCR, RDR ALT, left and/or right HDPT power ON.</label></td></tr>
-			<tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="startlist" id="start5"> <label for="start5" class="startlabel"> Set throttle cutoff to idle (Right Shift+Home).</label></td><td class="std1">16</td><td class="std2"><input type="checkbox" class="startlist" id="start16"> <label for="start16" class="startlabel"> Set avionics power INS to stor HDG.</label></td></tr>
-			<tr><td class="std1">6</td><td class="std2"><input type="checkbox" class="startlist" id="start6"> <label for="start6" class="startlabel"> Check RPM and temperature FTIT rising.</label></td><td class="std1">17</td><td class="std2"><input type="checkbox" class="startlist" id="start17"> <label for="start17" class="startlabel"> Power ON: MMC, ST STA, MFD, UFC, GPS and DL.</label></td></tr>
-			<tr><td class="std1">7</td><td class="std2"><input type="checkbox" class="startlist" id="start7"> <label for="start7" class="startlabel"> Set IFF to normal.</label></td><td class="std1">18</td><td class="std2"><input type="checkbox" class="startlist" id="start18"> <label for="start18" class="startlabel"> Turn on MDS LVT.</label></td></tr>
-			<tr><td class="std1">8</td><td class="std2"><input type="checkbox" class="startlist" id="start8"> <label for="start8" class="startlabel"> Threat Warning Aux(RWR) power ON.</label></td><td class="std1">19</td><td class="std2"><input type="checkbox" class="startlist" id="start19"> <label for="start19" class="startlabel"> Wait for INS to blink RDY.</label></td></tr>
-			<tr><td class="std1">9</td><td class="std2"><input type="checkbox" class="startlist" id="start9"> <label for="start9" class="startlabel"> Set CMDS mode to semi and PRGM to 2, turn CH+FL ON.</label></td><td class="std1">20</td><td class="std2"><input type="checkbox" class="startlist" id="start20"> <label for="start20" class="startlabel"> Set INS to NAV.</label></td></tr>
-			<tr><td class="std1">10</td><td class="std2"><input type="checkbox" class="startlist" id="start10"> <label for="start10" class="startlabel"> Turn HMCS symbology ON.</label></td><td class="std1">21</td><td class="std2"><input type="checkbox" class="startlist" id="start21"> <label for="start21" class="startlabel"> Dobber left to RTN, you're now ready for takeoff.</label></td></tr>
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1"> <label for="start1" class="startlabel"> Close canopy [Ctrl+C] and lock it.</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2"> <label for="start2" class="startlabel"> ELEC main power ON.</label></td></tr>
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3"> <label for="start3" class="startlabel"> Set ENG jet fuel to start 2.</label></td></tr>
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="startlist" id="start4"> <label for="start4" class="startlabel"> Wait for 20% RPM.</label></td></tr>
+			<tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="startlist" id="start5"> <label for="start5" class="startlabel"> Set throttle cutoff to idle [Right Shift+Home].</label></td></tr>
+			<tr><td class="std1">6</td><td class="std2"><input type="checkbox" class="startlist" id="start6"> <label for="start6" class="startlabel"> Check RPM and temperature FTIT rising.</label></td></tr>
+			<tr><td class="std1">7</td><td class="std2"><input type="checkbox" class="startlist" id="start7"> <label for="start7" class="startlabel"> Set IFF to normal.</label></td></tr>
+			<tr><td class="std1">8</td><td class="std2"><input type="checkbox" class="startlist" id="start8"> <label for="start8" class="startlabel"> Threat Warning Aux(RWR) power ON.</label></td></tr>
+			<tr><td class="std1">9</td><td class="std2"><input type="checkbox" class="startlist" id="start9"> <label for="start9" class="startlabel"> Set CMDS mode to semi and PRGM to 2, turn CH+FL ON.</label></td></tr>
+			<tr><td class="std1">10</td><td class="std2"><input type="checkbox" class="startlist" id="start10"> <label for="start10" class="startlabel"> Turn HMCS symbology ON.</label></td></tr>
 			<tr><td class="std1">11</td><td class="std2"><input type="checkbox" class="startlist" id="start11"> <label for="start11" class="startlabel"> Arm ejection seat.</label></td></tr>
 		</table>
+		<table class="starttable">
+			<tr><td class="std1">12</td><td class="std2"><input type="checkbox" class="startlist" id="start12"> <label for="start12" class="startlabel"> Turn landing lights ON.</label></td></tr>
+			<tr><td class="std1">13</td><td class="std2"><input type="checkbox" class="startlist" id="start13"> <label for="start13" class="startlabel"> Set stores config to Cat1 for A-A and Cat2 for A-G.</label></td></tr>
+			<tr><td class="std1">14</td><td class="std2"><input type="checkbox" class="startlist" id="start14"> <label for="start14" class="startlabel"> Turn HUD SYM up.</label></td></tr>
+			<tr><td class="std1">15</td><td class="std2"><input type="checkbox" class="startlist" id="start15"> <label for="start15" class="startlabel"> Turn FCR, RDR ALT, left and/or right HDPT power ON.</label></td></tr>
+			<tr><td class="std1">16</td><td class="std2"><input type="checkbox" class="startlist" id="start16"> <label for="start16" class="startlabel"> Set avionics power INS to stor HDG.</label></td></tr>
+			<tr><td class="std1">17</td><td class="std2"><input type="checkbox" class="startlist" id="start17"> <label for="start17" class="startlabel"> Power ON: MMC, ST STA, MFD, UFC, GPS and DL.</label></td></tr>
+			<tr><td class="std1">18</td><td class="std2"><input type="checkbox" class="startlist" id="start18"> <label for="start18" class="startlabel"> Turn on MDS LVT.</label></td></tr>
+			<tr><td class="std1">19</td><td class="std2"><input type="checkbox" class="startlist" id="start19"> <label for="start19" class="startlabel"> Wait for INS to blink RDY.</label></td></tr>
+			<tr><td class="std1">20</td><td class="std2"><input type="checkbox" class="startlist" id="start20"> <label for="start20" class="startlabel"> Set INS to NAV.</label></td></tr>
+			<tr><td class="std1">21</td><td class="std2"><input type="checkbox" class="startlist" id="start21"> <label for="start21" class="startlabel"> Dobber left to RTN, you're now ready for takeoff.</label></td></tr>
+		</table>
+
+		<div class="clear"></div>
 		<br/>
 		<a name="radar" class="anchor"></a><hr/>
 		<h1>RADAR <small>(MFD page = FCR)</small> <input type="checkbox" class="all-others" id="info-radar" name="info-radar" value="info-radar" checked> <label for="info-radar" class="inline-label"> Show extra information.</label></h1>
@@ -91,7 +140,8 @@
 		<a name="tgp" class="anchor"></a><hr/>
 		<h1>TARGETING POD <small>(MFD page = TGP)</small> <input type="checkbox" class="all-others" id="info-tgp" name="info-tgp" value="info-tgp" checked> <label for="info-tgp" class="inline-label"> Show extra information.</label></h1>
 		<div class="fullinfo" id="info-tgpdiv">
-			There is no extra information at this moment.
+			There is no extra information at this moment.<br/>
+			sdkj
 		</div>
 		<table>
 			<tr class="black"><td colspan="2">MFD buttons</td></tr>
@@ -105,9 +155,12 @@
 		</table>
 		<hr/>
 	</div>
+	</div>
 	
 	<div class="clear"></div>
 
-	<script src="script.js?v=1.0.1c" type="text/javascript"></script>
+</div>
+
+	<script src="script.js?v=1.0.1g" type="text/javascript"></script>
 </body>
 </html>
