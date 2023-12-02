@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 body {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'arimo', Helvetica, Arial, sans-serif;
 	font-size: 16px;
+	letter-spacing: 1px;
 	color:#fafafa;
 	background:#1a1919;
 	tab-size:1.3vw;
@@ -16,14 +18,15 @@ a:hover {
 }
 .greenButton {
 	display: block;
-	padding: 1vw;
-	padding-top: 0.5vw;
-	padding-bottom: 0.5vw;
-	width:calc(100% - 2vw);
+	padding: 0.5vw;
+	width:calc(100% - 1vw);
 	background: #00b646;
 	float:left;
 	margin-top:1vh;
 	color:#FFF;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 120%;
 	cursor: pointer;
 	border-radius:4px;
 	text-transform: uppercase;
@@ -64,6 +67,7 @@ input[type='checkbox'] {
 	font-size: 60%;
 	line-height: 200%;
 	margin-left: 3px;
+	vertical-align: text-top;
 }
 
 #wrapper {
@@ -101,6 +105,7 @@ input[type='checkbox'] {
 	font-size: 130%;
 	font-weight: normal;
 	margin-top: 25px;
+	line-height: 100%;
 }
 #Lmenu a {
 	color:#fafafa;
@@ -110,11 +115,25 @@ input[type='checkbox'] {
 #Lmenu a:hover {
 	color:#fff;
 }
+#fullscreenBtn {
+	float: right;
+	padding: 0.3vw;
+	margin-top: -0.2vw;
+	color: #FFF;
+	background: transparent;
+	border: 1px solid #FFF;
+	border-radius: 5%;
+	outline: none;
+	cursor: pointer;
+}
 .setDiv {
 	line-height: 150%;
 }
 .setDiv span {
 	user-select: none;
+}
+.sideIcon {
+	margin-left: 0.1vw;
 }
 
 ::-webkit-scrollbar {
