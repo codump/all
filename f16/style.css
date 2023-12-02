@@ -104,12 +104,14 @@ input[type='checkbox'] {
 	font-size: 130%;
 	font-weight: normal;
 	margin-top: 25px;
+	margin-bottom: 0px;
 	line-height: 100%;
 }
 #Lmenu h2.first {
 	font-size: 130%;
 	font-weight: normal;
 	margin-top:4.3vh;
+	margin-bottom: 2vh;
 	line-height: 100%;
 }
 #Lmenu a {
