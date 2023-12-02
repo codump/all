@@ -85,7 +85,7 @@ input[type='checkbox'] {
 }
 #right {
 	height: 100vh;
-	margin-left:1.5vw;
+	padding-left: 1vw;
 	flex-grow: 3;
 }
 
@@ -137,6 +137,7 @@ input[type='checkbox'] {
 #main {
 	height: 100vh;
 	line-height: 140%;
+	padding-right: 1vw;
 	overflow: auto;
 }
 #main a {
