@@ -29,6 +29,16 @@
 	"_commentSnippets": "Add snippet to top of snippets array so search will see the newest first.",
 	"snippets": [
 		{
+ 			"itemId":"1720795053544",
+ 			"URLid":"c9d3780c5ca6680ac24670b36ee649c8",
+ 			"title":"WordPress published and pending posts webhook to discord",
+ 			"postedOn":"12 July 2024",
+ 			"author":"Kip",
+ 			"lastEdit":"-",
+			"tags": "Snippet",
+		"content":"I needed a WordPress to discord webhook plugin but those that were available didn't work. So I made this snippet that will post to discord if there is a pending or published post. How to install: go to the <xmp>wp-content/plugins/</xmp> folder and create a new folder called <xmp>post-to-discord</xmp>. Create a new file called <xmp>post-to-discord</xmp> and past the snippet into it. Now you can go to your WP settings -> general and you will find 2 fields to submit the webhook."
+ 		},
+		{
 			"itemId":"1676128585697",
 			"URLid":"cd4a9e3cd714f366430939bb481f3d29",
 			"title":"Version push to cache in JavaScript",
