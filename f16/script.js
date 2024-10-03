@@ -95,3 +95,15 @@ $('.all-others').change(function() {
 	$('#'+getId+'div').toggle();
 });
 /* Checkboxes */
+
+/* Images enlarged */
+$("img").on("click", function() {
+    var src = this.src;
+    $("#overlay").css("display", "flex");
+	$("#overlayContent").prepend('<img src="'+src+'" />')
+});
+$("#overlay").on("click", function() {
+    $("#overlay").css("display", "none");
+	$("#overlayContent").html('')
+});
+/* Images enlarged */
