@@ -21,7 +21,7 @@
 <script src="https://kit.fontawesome.com/f072e2e626.js" crossorigin="anonymous"></script>
 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-<link rel="stylesheet" href="style.css?v=1.0.20u" />
+<link rel="stylesheet" href="style.css?v=1.0.20x" />
 
 
 </head>
@@ -41,6 +41,7 @@
 		<a href="#start" class="greenButton"><i class="fa-regular fa-snowflake fa-fw sideIcon"></i> Cold start</a>
 		<a href="#radar" class="greenButton"><i class="fa-solid fa-satellite-dish fa-fw sideIcon"></i> Radar</a>
 		<a href="#tgp" class="greenButton"><i class="fa-solid fa-bullseye fa-fw sideIcon"></i> Targeting pod</a>
+        <a href="#ecm" class="greenButton"><i class="fa-solid fa-bolt fa-fw sideIcon"></i> ECM pod</a>
 		
 	</div>
 	</div>
@@ -131,6 +132,23 @@
 			<tr><td class="td1">TMS left</td><td class="td2">Cycle TV/WHOT/BHOT.</td></tr>
 			<tr><td class="td1">TMS right</td><td class="td2">Area track (STP) 3x max.</td></tr>
 		</table>
+        <a name="ecm" class="anchor"></a><hr/>
+		<h1>ELECTRONIC COUNTERMEASURE POD <input type="checkbox" class="all-others" id="info-ecm" name="info-ecm" value="info-ecm" checked> <label for="info-ecm" class="inline-label"> Show extra information.</label></h1>
+		<div class="fullinfo" id="info-ecmdiv">
+            <table>
+				<tr><td class="tdI1"><img src="https://codump.github.io/f16/img/ECM-transmit-knob.jpg" alt="" /></td><td class="tdI2">ECM transmit knob.</td><td class="tdI1"><img src="https://codump.github.io/f16/img/ECM-buttons.jpg" alt="" /></td><td class="tdI2">ECM buttons.</td></tr>
+			</table><br/>
+			- With the ECM pod, store config needs to be set to 3.<br/>
+            - Startup the ECM by pressing all 6 square buttons on the ECM panel. If they are on they should have an orange S.<br/>
+            - Set the transmit knob to 1 (by default it's set to 3, which means it's continues transmitting and everyone knows where you are).<br/>
+            - Blue T means it's transmitting for jamming.
+		</div>
+		<table>
+			<tr class="black"><td colspan="2">CMS buttons</span></td></tr>
+			<tr><td class="td1">CMS down</td><td class="td2">Automatic ECM (green S).</td></tr>
+            <tr><td class="td1">CMS left</td><td class="td2">Chaff and/or flare (depending on program).</td></tr>
+            <tr><td class="td1">CMS right</td><td class="td2">Turn off automatic jamming.</td></tr>
+		</table>
 		<hr/>
 	</div>
 	</div>
@@ -139,6 +157,10 @@
 
 </div>
 
-	<script src="script.js?v=1.0.1i" type="text/javascript"></script>
+<div id="overlay">
+    <div id="overlayContent"></div>
+</div>
+
+<script src="script.js?v=1.0.1j" type="text/javascript"></script>
 </body>
 </html>
