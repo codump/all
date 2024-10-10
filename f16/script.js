@@ -78,6 +78,20 @@ $("#uncheckstart").on("click", function() {
 	$('.startlist').prop('checked', false);
 	$('.startlabel').removeClass("startlabelGreen");
 });
+
+$('.aarlist').change(function() {
+  var $this = $(this);
+  if ($this.prop('checked')) {
+    $("label[for='"+$this.attr("id")+"']").addClass("startlabelGreen");
+  } else {
+  $("label[for='"+$this.attr("id")+"']").removeClass("startlabelGreen");
+}
+});
+$("#uncheckaar").on("click", function() {
+  $('.aarlist').prop('checked', false);
+  $('.aarlabel').removeClass("startlabelGreen");
+});
+
 $('#info-all').change(function() {
     var $this = $(this);
   	if ($this.prop('checked')) {
