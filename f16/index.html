@@ -21,7 +21,7 @@
 <script src="https://kit.fontawesome.com/f072e2e626.js" crossorigin="anonymous"></script>
 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-<link rel="stylesheet" href="style.css?v=1.0.20x" />
+<link rel="stylesheet" href="style.css?v=1.0.20z" />
 
 
 </head>
@@ -180,11 +180,17 @@
 				<tr><td class="tdI1"><img src="https://codump.github.io/f16/img/list-button.jpg" alt="" /></td><td class="tdI2">List button.</td><td class="tdI1"><img src="https://codump.github.io/f16/img/alow-2.jpg" alt="" /></td><td class="tdI2">ALOW (2) button.</td></tr>
 			</table><br/>
 		</div>
-		- Open fuel cap by switching air refuel switch.<br/>
-		- Add DED data to HUD by switching the DED data switch.<br/>
-		- Open list by pressing list button.<br/>
-		- Select list 2 BNGO by pressing the ALOW (2) button.
+		<a id="uncheckaar">Uncheck all in list.</a><br/>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="aarlist" id="aar1"> <label for="aar1" class="aarlabel"> Send intent to refuel (\ menu) to tanker which then replies with altitude and speed for refueling.</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="aarlist" id="aar2"> <label for="aar2" class="aarlabel"> Add DED data to HUD by switching the DED data switch.</label></td></tr>
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="aarlist" id="aar3"> <label for="aar3" class="aarlabel"> Open list by pressing list button.</label></td></tr>
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="aarlist" id="aar4"> <label for="aar4" class="aarlabel"> Select list 2 BNGO by pressing the ALOW (2) button.</label></td></tr>
+			<tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="aarlist" id="aar5"> <label for="aar5" class="aarlabel"> Open fuel cap by switching air refuel switch (Auto pilot will be disabled).</label></td></tr>
+			<tr><td class="std1">6</td><td class="std2"><input type="checkbox" class="aarlist" id="aar6"> <label for="aar6" class="aarlabel"> Send ready pre-contact (\ menu) to tanker when you're in position.</label></td></tr>
+		</table><div style="clear: both;"></div>
 		<hr/>
+
 	</div>
 	</div>
 	
@@ -196,6 +202,6 @@
     <div id="overlayContent"></div>
 </div>
 
-<script src="script.js?v=1.0.1j" type="text/javascript"></script>
+<script src="script.js?v=1.0.1z" type="text/javascript"></script>
 </body>
 </html>
