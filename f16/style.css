@@ -284,16 +284,16 @@ input[type='checkbox'] {
 	padding-left: 0px;
 	padding-right: 4px;
 }
-.startlist {
+.startlist, .aarlist {
 	filter: hue-rotate(280deg);
 }
-input[type='checkbox'].startlist {
+input[type='checkbox'].startlist, input[type='checkbox'].aarlist {
 	width: 16px;
 	height: 16px;
 	margin-left: -0.5vw;
 	line-height: 125%;
 }
-.startlabel {
+.startlabel, .aarlabel {
 	font-size: 100%;
 	line-height: 125%;
 	text-decoration: none;
